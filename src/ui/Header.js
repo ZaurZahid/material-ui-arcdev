@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import ReactGA from 'react-ga'
 import Link from '../Link'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
@@ -138,7 +139,7 @@ export default function Header(props) {
 
   const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent)
   const [openDraw, setOpenDraw] = React.useState(false)
-
+  const [previousPage, setPreviousPage] = React.useState('')
   const handleChange = (e, newVal) => {
     props.setValue(newVal)
     // console.log(newVal)
@@ -195,6 +196,11 @@ export default function Header(props) {
     {name: 'Estimate', link: '/estimate', activeIndex: 5}
   ]
   useEffect(() => {
+    if (previousPage !== window.location.pathname) {
+      //sehife refresh olanda eleme icindekini ancaq seh deyisende bas verir icindeki
+      setPreviousPage(window.location.pathname)
+      ReactGA.pageview(window.location.pathname + window.location.search) //  mes /about bu gedir google analyticsde qeyd olunurki yeni bu sehifeye bas cekib
+    }
     ;[...menuOptions, ...routes].forEach((route) => {
       switch (window.location.pathname) {
         case `${route.link}`:
@@ -273,7 +279,13 @@ export default function Header(props) {
         className={classes.button}
         component={Link}
         href="/estimate"
-        onClick={() => props.setValue(5)}
+        onClick={() => {
+          props.setValue(5)
+          ReactGA.event({
+            category: 'Estimate',
+            action: 'button in header'
+          })
+        }}
       >
         Free Estimate
       </Button>
@@ -318,6 +330,10 @@ export default function Header(props) {
             onClick={() => {
               setOpenDraw(false)
               props.setValue(5)
+              ReactGA.event({
+                category: 'Estimate',
+                action: 'button in drawer (mobile)'
+              })
             }}
             component={Link}
             href="/estimate"

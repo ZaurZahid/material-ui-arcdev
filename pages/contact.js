@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import ReactGA from 'react-ga'
 import Head from 'next/head'
 import Link from '../src/Link'
 import axios from 'axios'
@@ -336,7 +337,9 @@ export default function Contact(props) {
                 className={classes.learnButton}
                 component={Link}
                 href="/revulation"
-                onClick={() => props.setValue(2)}
+                onClick={() => {
+                  props.setValue(2)
+                }}
               >
                 <span style={{marginRight: 10}}>Learn More</span>
                 <ButtonArrow width={15} height={15} fill={theme.palette.common.blue} />
@@ -357,7 +360,13 @@ export default function Contact(props) {
             className={classes.estimateButton}
             component={Link}
             href="/estimate"
-            onClick={() => props.setValue(5)}
+            onClick={() => {
+              props.setValue(5)
+              ReactGA.event({
+                category: 'Estimate',
+                action: 'button in Contact'
+              })
+            }}
           >
             <span style={{marginRight: 10}}>Learn More</span>
             <ButtonArrow width={15} height={15} fill={theme.palette.common.white} />

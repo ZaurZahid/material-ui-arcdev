@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactGA from 'react-ga'
 import Link from '../Link'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
@@ -75,7 +76,9 @@ export default function CallToAction(props) {
                 className={classes.learnButton}
                 component={Link}
                 href="/revulation"
-                onClick={() => props.setValue(2)}
+                onClick={() => {
+                  props.setValue(2)
+                }}
               >
                 <span style={{marginRight: 10}}>Learn More</span>
                 <ButtonArrow width={15} height={15} fill={theme.palette.common.blue} />
@@ -96,7 +99,13 @@ export default function CallToAction(props) {
           className={classes.estimateButton}
           component={Link}
           href="/estimate"
-          onClick={() => props.setValue(5)}
+          onClick={() => {
+            props.setValue(5)
+            ReactGA.event({
+              category: 'Estimate',
+              action: 'button in CallToAction'
+            })
+          }}
         >
           <span style={{marginRight: 10}}>Learn More</span>
           <ButtonArrow width={15} height={15} fill={theme.palette.common.white} />
