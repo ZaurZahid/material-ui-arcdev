@@ -172,7 +172,7 @@ export default function About(props) {
         direction="column"
         className={classes.rowContainer}
         alignItems="center"
-        style={{marginBottom: '15rem'}}
+        style={{marginBottom: matchesMD ? '5rem' : '15rem'}}
       >
         <Grid item>
           <Typography variant="h4" gutterBottom align="center">
