@@ -203,7 +203,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#B3B3B3', height: '70rem'}}
+        style={{backgroundColor: '#B3B3B3', height: '65rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
@@ -254,7 +254,7 @@ export default function Revulation(props) {
           <img
             src="/assets/consultationIcon.svg"
             alt="consultation"
-            style={{maxHeight: matchesMD ? 170 : 1000}}
+            style={{maxHeight: matchesMD ? 190 : 1000}}
           />
         </Grid>
       </Grid>
@@ -263,7 +263,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#FF7373', height: '70rem'}}
+        style={{backgroundColor: '#FF7373', height: '55rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
@@ -314,7 +314,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#39B54A', height: '70rem'}}
+        style={{backgroundColor: '#39B54A', height: '61rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
@@ -365,7 +365,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#A67C52', height: '70rem'}}
+        style={{backgroundColor: '#A67C52', height: '41rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
@@ -408,7 +408,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#39B54A', height: '70rem'}}
+        style={{backgroundColor: '#39B54A', height: '53rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
