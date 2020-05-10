@@ -184,7 +184,7 @@ export default function About(props) {
             Zaur Aliyev, Founder
           </Typography>
           <Typography variant="body1" align="center">
-            I started coding when I was 17 years old.
+            I started coding when I was 18 years old.
           </Typography>
         </Grid>
         <Grid container justify="center">
