@@ -161,7 +161,7 @@ export default function About(props) {
             <img
               src="/assets/history.svg"
               alt={'history'}
-              style={{maxHeight: matchesSM ? 200 : '22rem'}}
+              style={{maxHeight: matchesSM ? 170 : '22rem'}}
             />
           </Grid>
         </Grid>
@@ -228,11 +228,9 @@ export default function About(props) {
                 src="/assets/car.jpg"
                 alt="yearbook"
                 style={{
-                  maxHeight: matchesMD ? 300 : 253,
-                  minHeight: 300,
-                  maxWidth: 300,
                   borderRadius: '50%'
                 }}
+                className={classes.avatar}
               />
             </Grid>
             <Grid item>
@@ -265,11 +263,9 @@ export default function About(props) {
                 src="/assets/masmas.jpg"
                 alt="masmas"
                 style={{
-                  maxHeight: matchesMD ? '300' : '253',
-                  minHeight: 250,
-                  maxWidth: 300,
                   borderRadius: '50%'
                 }}
+                className={classes.avatar}
               />
             </Grid>
             <Grid item align="right">

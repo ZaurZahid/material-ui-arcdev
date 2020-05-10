@@ -203,7 +203,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#B3B3B3', height: '90rem'}}
+        style={{backgroundColor: '#B3B3B3', height: '70rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
@@ -244,7 +244,13 @@ export default function Revulation(props) {
             intuition will help usher you into this new future of possibilities.
           </Typography>
         </Grid>
-        <Grid item style={{alignSelf: 'center'}} lg alignItems={matchesMD ? 'center' : undefined}>
+        <Grid
+          item
+          container
+          style={{alignSelf: 'center'}}
+          lg
+          alignItems={matchesMD ? 'center' : undefined}
+        >
           <img
             src="/assets/consultationIcon.svg"
             alt="consultation"
@@ -257,7 +263,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#FF7373', height: '90rem'}}
+        style={{backgroundColor: '#FF7373', height: '70rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
@@ -308,7 +314,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#39B54A', height: '90rem'}}
+        style={{backgroundColor: '#39B54A', height: '70rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
@@ -359,7 +365,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#A67C52', height: '90rem'}}
+        style={{backgroundColor: '#A67C52', height: '70rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
@@ -402,7 +408,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#39B54A', height: '90rem'}}
+        style={{backgroundColor: '#39B54A', height: '70rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
@@ -445,7 +451,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#C1272D', height: '90rem'}}
+        style={{backgroundColor: '#C1272D', height: '88rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
@@ -512,7 +518,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#FBB03B', height: '90rem'}}
+        style={{backgroundColor: '#FBB03B', height: '80rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
@@ -564,7 +570,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#8E45CE', height: '90rem'}}
+        style={{backgroundColor: '#8E45CE', height: '82rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
@@ -610,7 +616,7 @@ export default function Revulation(props) {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{backgroundColor: '#29ABE2', height: '90rem'}}
+        style={{backgroundColor: '#29ABE2', height: '70rem'}}
       >
         <Grid item container direction="column" lg alignItems={matchesMD ? 'center' : undefined}>
           <Typography
