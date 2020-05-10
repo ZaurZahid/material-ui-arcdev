@@ -230,7 +230,8 @@ export default function About(props) {
                 style={{
                   maxHeight: matchesMD ? 300 : 253,
                   minHeight: 300,
-                  maxWidth: 300
+                  maxWidth: 300,
+                  borderRadius: '50%'
                 }}
               />
             </Grid>
@@ -263,7 +264,12 @@ export default function About(props) {
               <img
                 src="/assets/masmas.jpg"
                 alt="masmas"
-                style={{maxHeight: matchesMD ? '300' : '253', minHeight: 250, maxWidth: 300}}
+                style={{
+                  maxHeight: matchesMD ? '300' : '253',
+                  minHeight: 250,
+                  maxWidth: 300,
+                  borderRadius: '50%'
+                }}
               />
             </Grid>
             <Grid item align="right">
