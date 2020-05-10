@@ -248,7 +248,7 @@ export default function Revulation(props) {
           <img
             src="/assets/consultationIcon.svg"
             alt="consultation"
-            style={{maxHeight: matchesMD ? 200 : 1000}}
+            style={{maxHeight: matchesMD ? 170 : 1000}}
           />
         </Grid>
       </Grid>
@@ -299,7 +299,7 @@ export default function Revulation(props) {
           <img
             src="/assets/mockupIcon.svg"
             alt="mockup"
-            style={{maxHeight: matchesMD ? 300 : 1000}}
+            style={{maxHeight: matchesMD ? 190 : 1000}}
           />
         </Grid>
       </Grid>
@@ -393,7 +393,7 @@ export default function Revulation(props) {
           <img
             src="/assets/designIcon.svg"
             alt="review"
-            style={{maxHeight: matchesMD ? 150 : 500}}
+            style={{maxHeight: matchesMD ? 100 : 500}}
           />
         </Grid>
       </Grid>
@@ -504,7 +504,7 @@ export default function Revulation(props) {
           </Typography>
         </Grid>
         <Grid item lg style={{alignSelf: 'center'}}>
-          <img src="/assets/buildIcon.svg" alt="build" style={{maxHeight: matchesMD ? 200 : 480}} />
+          <img src="/assets/buildIcon.svg" alt="build" style={{maxHeight: matchesMD ? 190 : 480}} />
         </Grid>
       </Grid>
       <Grid
@@ -657,7 +657,7 @@ export default function Revulation(props) {
           <img
             src="/assets/iterateIcon.svg"
             alt="iterate"
-            style={{maxHeight: matchesMD ? 200 : 1000}}
+            style={{maxHeight: matchesMD ? 140 : 1000}}
           />
         </Grid>
       </Grid>
