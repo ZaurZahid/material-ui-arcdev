@@ -88,6 +88,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '12rem',
     [theme.breakpoints.down('sm')]: {
       padding: 25
+    },
+    [theme.breakpoints.down('xs')]: {
+      padding: 5
     }
   },
   revolutionBgImage: {

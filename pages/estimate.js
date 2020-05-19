@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import Head from 'next/head'
 import {cloneDeep} from 'lodash'
 import Lottie from 'react-lottie'
@@ -315,6 +315,8 @@ export default function Estimate(props) {
   const theme = useTheme()
   const matchesMD = useMediaQuery(theme.breakpoints.down('md'))
   const matchesSM = useMediaQuery(theme.breakpoints.down('sm'))
+  const myRef = useRef(null)
+
   const [questions, setQuestions] = useState(defaultQuestions)
   const [open, setOpen] = useState(false)
 
@@ -336,6 +338,9 @@ export default function Estimate(props) {
   const [alert, setAlert] = useState({bgc: '', open: false, message: ''})
 
   const nextQuestion = () => {
+    if (matchesSM) {
+      window.scrollTo(0, myRef.current.offsetTop + 75)
+    }
     var newQuestions = cloneDeep(questions) //hamsi
     const currentActive = newQuestions.filter((qu) => qu.active) //indiki active olan
     var currentIndex = currentActive[0].id - 1 //activin indexi-1 cunki [1] =>[0]ci olur
@@ -354,6 +359,9 @@ export default function Estimate(props) {
     // console.log(newQuestions)
   }
   const backQuestion = () => {
+    if (matchesSM) {
+      window.scrollTo(0, myRef.current.offsetTop + 75)
+    }
     var newQuestions = cloneDeep(questions) //hamsi
     const currentActive = newQuestions.filter((qu) => qu.active) //indiki active olan
     var currentIndex = currentActive[0].id - 1 //activin indexi-1 cunki [1] =>[0]ci olur
@@ -585,7 +593,7 @@ export default function Estimate(props) {
           .filter((question) => question.active === true)
           .map((question, index) => (
             <React.Fragment key={index}>
-              <Grid item>
+              <Grid item ref={myRef}>
                 <Typography
                   variant="h1"
                   style={{
